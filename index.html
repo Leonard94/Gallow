@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Gallow</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">Gallow</div>
+        <!-- Letters -->
+        <div class="alphabet">
+        </div>
+        <!-- Answer Field -->
+        <div class="answer">
+        </div>
+        <!-- PopUp -->
+        <div class="info__win" id="info-win">
+            <div class="info-win__text" id="info-win__text">
+                <!-- Вы победили! -->
+            </div>
+            <div class="info-win__btn" id="info-restart">
+                Начать игру заново
+            </div>
+            <div class="info-win__btn" id="info-restart-category">
+                Выбрать категорию
+            </div>
+        </div>
+        <!-- Popup Categories -->
+        <div class="popup__categories" id="popup-categories">
+            <div class="popup-categories__title">Выберите категорию</div>
+            <div class="popup__category">Страны</div>
+            <div class="popup__category">Еда</div>
+            <div class="popup__category">Цвета</div>
+            <div class="popup__category">Домашние животные</div>
+            <div class="popup__category">Имена</div>
+        </div>
+        <div class="info">
+            <!-- Points -->
+            <div class="info__points">
+                <div class="info__victory">
+                    Побед: <span id="points-victory">0</span>
+                </div>
+                <div class="info__losing">
+                    Поражений: <span id="points-losing">0</span>
+                </div>
+            </div>
+            <!-- Lives -->
+            <div class="info__lives"></div>
+        </div>
+        <!-- Welcome -->
+        <div class="info__welcome" id="info-welcome">
+            <div class="welcome__title">
+                Добро пожаловать в игру <br> "Виселица"
+            </div>
+            <div class="welcome__text">
+                Правила игры очень просты:
+                <p>Мы загадали слово, попробуй угадать его по буквам.</p>
+                <p>Одна жизнь будет сгорать, если такой буквы в слове нет.</p>
+                <br>
+                <p>В игре присутствует несколько категорий слов. <br> Cменить категорию можно между раундами.<br> <br>
+                    Нажми на любую категорию ниже, чтобы начать:</p>
+                <div class="welcome__category">Страны</div>
+                <div class="welcome__category">Еда</div>
+                <div class="welcome__category">Цвета</div>
+                <div class="welcome__category">Домашние животные</div>
+                <div class="welcome__category">Имена</div>
+            </div>
+        </div>
+        <!-- Chosen Category -->
+        <div class="info__categories">
+            <div class="info__title">Выбранная категория: <span id='chosen-category'>страны</span></div>
+        </div>
+    </div>
+    <div class="block-game" id="block-game">
+    </div>
+</body>
+<script src="js/script.js"></script>
+
+</html>
